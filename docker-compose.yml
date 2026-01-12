@@ -5,7 +5,7 @@ services:
     container_name: joke
     expose:
       - "8010"
-    network:
+    networks:
       - proxy
 
 networks:
