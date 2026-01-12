@@ -1,0 +1,13 @@
+services:
+  joke:
+    build:
+      context: .
+    container_name: joke
+    expose:
+      - "8010"
+    network:
+      - proxy
+
+networks:
+  proxy:
+    external: true
