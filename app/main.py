@@ -3,7 +3,7 @@ import requests
 
 app = FastAPI()
 
-@app.get("/joke")
+@app.get("/")
 def joke():
     response = requests.get("https://v2.jokeapi.dev/joke/any")
     return response.json()
