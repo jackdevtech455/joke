@@ -15,8 +15,8 @@ class JokeRead(BaseModel):
     error: str | bool
     category: str
     type: str
-    setup: str
-    delivery: str
+    setup: str = ""
+    delivery: str = ""
     flags: JokeFlags
     safe: bool
     lang: str
