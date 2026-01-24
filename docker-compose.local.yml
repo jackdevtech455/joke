@@ -1,0 +1,7 @@
+services:
+  joke:
+    build:
+      context: .
+    container_name: joke
+    ports:
+      - "8010:8010"
