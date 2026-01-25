@@ -12,7 +12,7 @@ class JokeFlags(BaseModel):
 
 class JokeRead(BaseModel):
     id: int
-    error: str | bool
+    error: bool
     category: str
     type: str
     setup: str = ""
