@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <main class="wrap">
+    <section class="card">
+      <h1 class="title">Joke</h1>
+
+      <div class="joke">
+        <p id="setup" class="setup">{{ joke.setup }}</p>
+        <p id="delivery" class="delivery is-hidden">{{ joke.delivery }}</p>
+      </div>
+
+      <div class="actions">
+        <button id="btn-show" type="button" class="btn btn-primary">
+          Reveal punchline
+        </button>
+
+        <form method="get" action="/" class="inline-form">
+          <button id="btn-new" type="submit" class="btn btn-ghost">
+            New joke
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+{% endblock content %}
+

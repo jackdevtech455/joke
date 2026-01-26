@@ -9,6 +9,7 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 COPY ./src/ /app/src
 COPY pyproject.toml /app/pyproject.toml
 COPY uv.lock /app/uv.lock
+COPY .python-version /app/.python-version
 COPY README.md /app/README.md
 
 # Install the application dependencies.
